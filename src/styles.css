@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgba(255, 147, 53, 0.522);
+}
+
+h1 {
+  text-align: center;
+  border: 3px solid white;
+  padding: 6px;
+}
+h3 {
+  border-bottom: solid grey;
+  padding-bottom: 12px;
+}
+
+button {
+  background-color: red;
+  color: aliceblue;
+  border-radius: 50px;
+  size: 150pt;
+  box-shadow: 8px;
+  margin-left: 12px;
+  font-size: 14px;
+  height: 40px;
+  width: 120px;
+  justify-content: space-around;
+  padding: 12px, 24px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+button:hover {
+  background-color: rgba(245, 140, 140, 0.999);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: rgba(200, 103, 248, 0.649);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(1px);
+}
+
+.jira {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 6px;
+}
+.taskCard {
+  background-color: white;
+  color: tomato;
+  border: 2px solid greenyellow;
+  margin: 5px;
+  padding: 6px;
+  min-height: 30px; /* Ensure a minimum height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+.taskCard[contenteditable] {
+  outline: none; /* Prevent default outline on editable elements */
+}
+.column {
+  width: 30%;
+  border: 2px solid grey;
+  margin-right: 6px;
+  min-height: 400px;
+  /* min-width: 120px; */
+  text-align: center;
+  margin: 5px;
+}
